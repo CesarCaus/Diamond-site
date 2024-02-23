@@ -1,0 +1,122 @@
+main {
+    background-color: var(--bg-color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+#first-container {
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/bg-site-diamond.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    background-color: var(--bg-color-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .logo-diamond {
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+        p {
+            text-align: center;
+            width: 70%;
+            font-size: 23px;
+            color: white;
+            font-weight: 500;
+    
+            span {
+                color: rgb(145, 145, 145);
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.596);
+            }
+        }
+    }
+
+    button {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px;
+        background: var(--linear-gradient-color);
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: black;
+        background: blue;
+    }
+}
+
+
+
+header {
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    z-index: 10;
+
+    nav {
+        font-size: 16px;
+        font-weight: 500;
+
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+
+        a {
+            text-decoration: none;
+            color: var(--font-color-header);
+            cursor: pointer;
+        }
+    }
+
+    .BR {
+        display: flex;
+        align-items: center;
+        color: var(--font-color-header);
+        gap: 10px;
+
+        span {
+            font-weight: 200;
+        }
+    }
+}
+
+#about-us {
+    margin-top: -120px;
+}
+
+#qualifications {
+    margin-top: 70px;
+}
+
+#services {
+    margin-top: 70px;
+}
+
+#contact {
+    margin-top: 70px;
+}
+

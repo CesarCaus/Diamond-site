@@ -1,0 +1,55 @@
+@defer (on viewport) {
+    <main id="qualifications-table">
+        <section *ngIf="positionTemplate == 1">
+            <div class="text-area">
+                <h1>Empresa Acreditada</h1>
+                <span class="line-red"></span>
+                <p>
+                    A confiança em nossos serviços proporcionou ISO 9001. A Diamond Aviação é reconhecida como o melhor Centro de Serviços especializado em Hélices do Brasil. Venha conhecer!
+                </p>
+            </div>
+            <div class="image-area">
+                <img src="../../../assets/empresa-acreditada.png" alt="Empresa Acreditada">
+            </div>
+        </section>
+        <section *ngIf="positionTemplate == 2">
+            <div class="text-area">
+                <h1>Atendimento ao Cliente</h1>
+                <span class="line-red"></span>
+                <p>
+                    Investimos em nossos profissionais para que seja proporcionado o melhor atendimento a nossos clientes. Trabalho transparente com todo conforto, segurança e mão de obra altamente qualificada você só encontra aqui!
+                </p>
+            </div>
+            <div class="image-area">
+                <img src="../../../assets/atendimento-ao-cliente.png" alt="Atendimento ao Cliente" />
+            </div>
+        </section>
+        <section *ngIf="positionTemplate == 3">
+            <div class="text-area">
+                <h1>Serviços de Alto Nível</h1>
+                <span class="line-red"></span>
+                <p>
+                    Nossos serviços passam por uma rigorosa inspeção, desde a chegada da Hélice, onde é cuidadosamente inspecionada, até a saída. Nossos profissionais primam a excelência nos mínimos detalhes para oferecer o melhor a seus clientes.
+                </p>
+            </div>
+            <div class="image-area">
+                <img src="../../../assets/servicos-de-alto-nivel.png" alt="Serviços de Alto Nível" />
+            </div>
+        </section>
+    
+        <div class="arrow-qualifications">
+            <span (click)="prevQualifications()" class="material-symbols-outlined arrow-left">arrow_back_ios</span>
+            <span (click)="nextQualifications()" class="material-symbols-outlined arrow-right">arrow_forward_ios</span>
+        </div>
+    
+        <div class="radio-icons">
+            <input type="radio" [value]="1" [checked]="positionTemplate === 1" (change)="onRadioChange(1)">
+            <input type="radio" [value]="2" [checked]="positionTemplate === 2" (change)="onRadioChange(2)"> 
+            <input type="radio" [value]="3" [checked]="positionTemplate === 3" (change)="onRadioChange(3)">
+        </div>
+    </main>
+    
+    
+} @placeholder {
+    <span></span>
+}

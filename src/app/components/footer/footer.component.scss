@@ -1,0 +1,66 @@
+main {
+    width: 100vw;
+    height: 15vh;
+
+    color: var(--font-color-primary);
+    background-color: var(--bg-color-secundary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -10px;
+
+    div {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+       
+        h4 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+
+        .copy {
+            color: rgb(167, 167, 167);
+        }
+    }
+
+    section {
+        position: relative;
+        text-align: left;
+        p {
+            font-size: 14px;
+        }
+    }
+
+    aside {
+        position: absolute;
+        right: 50px;
+
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            font-size: 12px;
+        }
+
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    aside:hover {
+        background-color: rgb(25, 25, 25);
+    }
+}

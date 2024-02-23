@@ -1,0 +1,125 @@
+main {
+    color: var(--font-color-primary);
+    width: calc(90vw - 100px);
+    padding: 50px;
+    margin-top: 20px;
+    margin-right: 0;
+    animation: resetMarginRight 1s linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .services-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 550px;
+
+        h1 {
+            font-size: 40px;
+            padding: 0 20px;
+            font-weight: 500;
+        }
+        
+        p {
+            text-align: center;
+            width: 70%;
+            padding: 0 20px;
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 50px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 15px;
+                width: calc(100% - 30px);
+                list-style: none;
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            li:hover {
+                background: linear-gradient(to right, var(--bg-color-secundary), var(--bg-color-secundary), var(--bg-color-secundary), var(--bg-color-primary));
+                cursor: pointer;
+            }
+        }
+    }
+
+    .services-description {
+        width: 550px;
+        min-width: 550px;
+        height: 550px;
+        position: relative;
+
+        background-image: url(../../../assets/image-services.png);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services-description::after {
+        content: '';
+        position: absolute;
+
+        width:490px;
+        height:490px;
+
+        background: var(--linear-gradient-color);
+    }
+
+    .services-description::before {
+        content: '';
+        position: absolute;
+
+        width:480px;
+        height:480px;
+
+        background: url(../../../assets/image-services.png);
+        background-position: center;
+        z-index: 1;
+    }
+
+    .text-service-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+
+        width: 480px;
+        height: 480px;
+        gap: 50px;
+        text-align: center;
+
+        h1 {
+            width: 90%;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+            width: 60%;
+        }
+
+
+    }
+}
+
+@keyframes resetMarginRight {
+    0% {
+        margin-right: 250vw;
+    } 100% {
+        margin-right: 0;
+    }
+}

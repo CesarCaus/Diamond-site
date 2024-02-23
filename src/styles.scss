@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --font-color-header: white;
+    --font-color-primary: rgb(225, 225, 225);
+    --bg-color-primary: black;
+    --bg-color-secundary: rgb(20, 20, 20);
+    --linear-gradient-color: linear-gradient(to right, #01213E, #028cd1);
+}
